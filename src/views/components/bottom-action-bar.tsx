@@ -29,6 +29,7 @@ export function BottomActionBar() {
           <motion.button 
             className="flex-1 h-10 rounded-full bg-[#00D1FF] text-zinc-900 text-sm font-semibold hover:bg-[#00D1FF]/90 transition"
             whileTap={{ scale: 0.95 }}
+            onClick={() => document.getElementById('reservation')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Prendre RDV
           </motion.button>
